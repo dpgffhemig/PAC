@@ -1,1 +1,24 @@
-site_name: My Docs
+
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+
+site_name: PAC
+site_url: https://dpgffhemig.github.io/PAC/   # caminho real do GitHub Pages
+
+docs_dir: docs
+
+theme:
+  name: material
+  palette:
+    scheme: default
+    primary: 'light blue'
+    accent: amber
+  font:
+    text: Roboto
+    code: 'Roboto Mono'
+
+nav:
+  - Início: index.md
+
+
+
+   
