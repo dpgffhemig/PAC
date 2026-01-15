@@ -1,4 +1,7 @@
+
 site_name: PAC – FHEMIG
+site_url: https://dpgffhemig.github.io/PAC/
+docs_dir: docs
 
 theme:
   name: material
@@ -20,13 +23,13 @@ theme:
     text: Inter
     code: Roboto Mono
   features:
-    - navigation.tabs       # abas por macrotemas
-    - navigation.sections   # grupos na lateral
-    - navigation.tracking   # destaca seção atual
-    - toc.follow            # TOC “fixo” em telas largas
-    - navigation.top        # botão de voltar ao topo
-    - search.suggest        # sugestões na busca
-    - search.highlight      # realce de termos
+    - navigation.tabs
+    - navigation.sections
+    - navigation.tracking
+    - toc.follow
+    - navigation.top
+    - search.suggest
+    - search.highlight
 
 plugins:
   - search
@@ -40,15 +43,14 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
-
 nav:
   - Início: index.md
   - Conhecimento:
-    - Visão geral: conhecimento/index.md
-    - Materiais de apoio: conhecimento/materiais-de-apoio.md
-    - Perguntas frequentes: conhecimento/perguntas-frequentes.md
-    - Sobre o PAC: conhecimento/sobre-o-pac.md
-
-
-
-   
+      - "Visão geral": conhecimento/index.md
+      - "Materiais de apoio": conhecimento/materiais-de-apoio.md
+      - "Perguntas frequentes": conhecimento/perguntas-frequentes.md
+      - "Sobre o PAC": conhecimento/sobre-o-pac.md
+  - "PAC 2026":
+      - "Visão geral & cronograma": pac-2026/index.md
+      - "Sobre a revisão": pac-2026/sobre-a-revisao.md
+      - "Base de dados": pac-2026/base-de-dados.md
