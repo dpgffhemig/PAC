@@ -1,23 +1,53 @@
-
-# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
-
-site_name: PAC
-site_url: https://dpgffhemig.github.io/PAC/   # caminho real do GitHub Pages
-
-docs_dir: docs
+site_name: PAC – FHEMIG
 
 theme:
   name: material
+  language: pt-BR
   palette:
-    scheme: default
-    primary: 'light blue'
-    accent: amber
+    - scheme: default
+      primary: teal
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Alternar para modo escuro
+    - scheme: slate
+      primary: teal
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Alternar para modo claro
   font:
-    text: Roboto
-    code: 'Roboto Mono'
+    text: Inter
+    code: Roboto Mono
+  features:
+    - navigation.tabs       # abas por macrotemas
+    - navigation.sections   # grupos na lateral
+    - navigation.tracking   # destaca seção atual
+    - toc.follow            # TOC “fixo” em telas largas
+    - navigation.top        # botão de voltar ao topo
+    - search.suggest        # sugestões na busca
+    - search.highlight      # realce de termos
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - tables
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
 
 nav:
   - Início: index.md
+  - Conhecimento:
+    - Visão geral: conhecimento/index.md
+    - Materiais de apoio: conhecimento/materiais-de-apoio.md
+    - Perguntas frequentes: conhecimento/perguntas-frequentes.md
+    - Sobre o PAC: conhecimento/sobre-o-pac.md
 
 
 
